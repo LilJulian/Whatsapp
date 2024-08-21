@@ -19,7 +19,7 @@
     border-radius: 10px;
     flex-wrap: wrap;
     position: relative;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .header{
