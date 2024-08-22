@@ -4,13 +4,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-
-:root{
+  
+  :root{
     --verde: #10816c;
     --cien: 100%;
-}
+  }
   
-.conteiner{
+  .conteiner{
     margin: 50px auto;
     max-width: 380px;
     height: 90vh;
@@ -20,9 +20,9 @@
     flex-wrap: wrap;
     position: relative;
     /* overflow-y: scroll; */
-}
-
-.header{
+  }
+  
+  .header{
     background-color: var(--verde); 
     width: 450px;
     height: 15vh;
@@ -32,98 +32,100 @@
     flex-wrap: wrap;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    
-}
-
-.header__group{
+  }
+  
+  .header__group{
     font-family: Arial; 
     font-size: 20px; 
     color: white;
     margin: 19px;
     display: flex;
     margin-left: auto;
-}
-i{
+  }
+  
+  i{
     margin: 5px;
-}
-
-.titulo{
+  }
+  
+  .titulo{
     margin: 10px;
-}
-.header, .barra{
+  }
+  
+  .header, .barra{
     width: var(--cien);
-    
-}
-
-.barra{
-margin-bottom: 4px;
-}
-
-.barraa{
+  }
+  
+  .barra{
+    margin-bottom: 4px;
+  }
+  
+  .barraa{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 30px;
-}
-.barra__items{
+  }
+  
+  .barra__items{
     text-decoration: none;
     color: white;
     font-size: 20px;
     margin-bottom: 30px;
-}
-
-main{
+  }
+  
+  main{
     height: var(--cien);
     width: var(--cien);
     overflow-y: scroll;
-}
-
-.chats{
+  }
+  
+  .chats{
     display: flex;
     width: var(--cien);
     flex-wrap: wrap;
-}
-
-.chats__contactos{
+  }
+  
+  .chats__contactos{
     display: flex;
     align-items: center;
     width: var(--cien);
     height: 80px;
     border-bottom: 1px solid var(--verde);
-    background-color: antiquewhite;
-}
-
-.chats__contactos--foto{
+    background-color: rgb(247, 247, 247);
+  }
+  
+  .chats__contactos--foto{
     margin-left: 10px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 15px;
-}
-
-.chats_nombre{
+  }
+  
+  .chats_nombre{
     display: flex;
     margin-right: 10px;
     margin-bottom: 5px;
-}
-
-.info{
+    font-weight: bold;
+  }
+  
+  .info{
     flex-grow: 1;
-}
-
-.mensaje, .hora{
+  }
+  
+  .mensaje, .hora{
     color: grey;
-}
-
-.hora, .hora_verde{
+  }
+  
+  .hora, .hora_verde{
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.hora_verde{
+  }
+  
+  .hora_verde{
     color:  rgb(16, 214, 16);
-}
-
-.notificacion{
+  }
+  
+  .notificacion{
     display: flex ;
     margin-left  : 10px;
     margin-right: 15px;
@@ -131,9 +133,9 @@ main{
     border-radius: 60%;
     color: white;
     justify-content: center;
-}
-
-.contact{
+  }
+  
+  .contact{
     display: flex;
     position: fixed;
     background-color: var(--verde);
@@ -146,4 +148,83 @@ main{
     font-size: 20px;
     align-items: center;
     cursor: pointer;
+  }
+  
+
+
+
+  .tab {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    transition: opacity 0.5s; 
+    opacity: 0; 
+  }
+  
+  .tab:target {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  .status-list, .calls-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .status-item, .calls-item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .status-img, .calls-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .status-info, .calls-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .status-name, .calls-name {
+    font-weight: bold;
+  }
+  
+  .status-text, .calls-time {
+    color: #666;
+  }
+
+  .status-tab {
+    display: none;
+  }
+  
+  .calls-tab {
+    display: none;
+  }
+  
+  .status-tab:target {
+    display: block;
+  }
+  
+  .calls-tab:target {
+    display: block;
+  }
+
+  .chats {
+    display: block;
+  }
+
+.chats:target {
+  display: block;
+  
+}
+
+.status-img{
+    border: 2px solid green;
+    border-radius: 50%;
 }

@@ -19,21 +19,21 @@
         </div>
 
       <div class="barra">
-        <nav class="barraa">
-          <a class="barra__items barra__items--camara" href="#"><i class='bx bxs-camera'></i></a>
-          <a class="barra__items barra__items--chats" href="index.html"> Chats</a>
-          <a class="barra__items barra__items--status" href="status.html">Status</a>
-          <a class="barra__items barra__items--calls" href="#">Calls</a>
-        </nav>
+          <nav class="barraa">
+              <a class="barra__items barra__items--camara" href="#"><i class='bx bxs-camera'></i></a>
+              <a class="barra__items barra__items--chats" href="#chats-tab">Chats</a>
+              <a class="barra__items barra__items--status" href="#status-tab">Status</a>
+              <a class="barra__items barra__items--calls" href="#calls-tab">Calls</a>
+          </nav>
       </div>
     
     </header>
     <main>
-    <div class="chats">
+    <div class="chats" id="chats-tab">
         <div class="chats__contactos"> 
           <img class="chats__contactos--foto" src="ilia.jpg" alt=""> 
           <div class="info">
-            <span class="chats_nombre">Ilia</span> 
+            <span class="chats_nombre">Ilia,</span> 
             <div class="mensaje">
               <span>Buenos dias</span>
             </div>
@@ -131,8 +131,47 @@
             <div class="hora_verde"><span>1:00</span></div>
             <div class="notificacion"> <span>2</span> </div>
           </div>
-          
         </div>
+    </div>
+    <div class="tabs">
+      <div class="status-tab" id="status-tab" >
+        <h2>Status</h2>
+        <div class="status-list">
+          <div class="status-item">
+            <img src="ilia.jpg" alt="" class="status-img">
+            <div class="status-info">
+              <span class="status-name">Ilia</span>
+              <span class="status-text">Justo ahora</span>
+            </div>
+          </div>
+          <div class="status-item">
+            <img src="charles.jpg" alt="" class="status-img">
+            <div class="status-info">
+              <span class="status-name">Charles</span>
+              <span class="status-text">Hace 30 minuto</span>
+            </div>
+          </div>
+          <div class="status-item">
+            <img src="mcgregor.jpg" alt="" class="status-img">
+            <div class="status-info">
+              <span class="status-name">McGregor</span>
+              <span class="status-text">9:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calls-tab" id="calls-tab">
+        <h2>Calls</h2>
+        <div class="calls-list">
+          <div class="calls-item">
+            <img src="ilia.jpg" alt="" class="calls-img">
+            <div class="calls-info">
+              <span class="calls-name">Ilia</span>
+              <span class="calls-time">Hace 2 horas</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </main>
     <div class="contact">
